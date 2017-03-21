@@ -12,4 +12,5 @@ class PuzzleTimer:
         input()
         ending_time = time.time()
 
-        print(ending_time - starting_time)
+        solve_time = ending_time - starting_time
+        print("Solve time: %.3f seconds" % solve_time)
