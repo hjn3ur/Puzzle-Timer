@@ -1,5 +1,4 @@
 import time
-import queue
 
 
 def timer():
@@ -17,8 +16,10 @@ def timer():
         solve_time = ending_time - starting_time
         print("Solve time: %.3f seconds" % solve_time)
 
-        print("Record another time? (y/n)")
+        print("Record another time (y/n): ", end="")
         run_again = input()
+
+        print()
 
 if __name__ == "__main__":
     menu_option = ""
@@ -27,4 +28,6 @@ if __name__ == "__main__":
         menu_option = input()
 
         if menu_option == "1":
+            print()
             timer()
+
